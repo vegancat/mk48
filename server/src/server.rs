@@ -60,7 +60,7 @@ impl ArenaService for Server {
     const TICK_PERIOD_SECS: f32 = Ticks::PERIOD_SECS;
 
     /// How long a player can remain in limbo after they lose connection.
-    const LIMBO: Duration = Duration::from_secs(6);
+    const LIMBO: Duration = Duration::from_secs(30); // maybe 60 if doesn't put heavy load on the servers!
 
     type Bot = Bot;
     type ClientData = ClientData;
